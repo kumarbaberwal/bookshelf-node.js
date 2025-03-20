@@ -8,4 +8,5 @@ export const ENV_VARS = {
     CLOUDINARY_CLOUD_NAME: process.env.CLOUDINARY_CLOUD_NAME || 'dbz9ocmoh',
     CLOUDINARY_API_KEY: process.env.CLOUDINARY_API_KEY || "885253798614896",
     CLOUDINARY_API_SECRET: process.env.CLOUDINARY_API_SECRET || "WOzUYMsqhFR_HGPta_LtgmoBoTA",
+    API_URL: process.env.API_URL || "https://bookshelf-node-js.onrender.com",
 }

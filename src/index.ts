@@ -4,8 +4,10 @@ import authRouter from './routes/authRoutes'
 import { connectDB } from './databases/db';
 import bookRouter from './routes/bookRoutes';
 import cors from 'cors';
+import { cronJob } from './utils/cron';
 
 const app = express();
+cronJob.start();
 app.use(express.json());
 app.use(cors());
 
