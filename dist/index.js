@@ -9,7 +9,9 @@ const authRoutes_1 = __importDefault(require("./routes/authRoutes"));
 const db_1 = require("./databases/db");
 const bookRoutes_1 = __importDefault(require("./routes/bookRoutes"));
 const cors_1 = __importDefault(require("cors"));
+const cron_1 = require("./utils/cron");
 const app = (0, express_1.default)();
+cron_1.cronJob.start();
 app.use(express_1.default.json());
 app.use((0, cors_1.default)());
 app.get('/', (req, res) => {
